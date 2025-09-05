@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping App part-7</title>
+     <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+     h1 {
+        text-align: center;
+     }
+     .bg-container {
+        max-width: 800px;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        padding: 5px;
+        margin: 10px auto; 
+        border-radius: 5px;
+        box-shadow: 0px 4px 8px 0px gray;
+     }
+     body{
+        background-color:rgb(215, 237, 237)
+     }
+     .product-row {
+        display: flex;
+        justify-content: space-between;
+        padding:10px;
+        border: 2px solid black;
+        border-radius: 5px;
+        align-items: center;
+        margin: 5px;
+
+     }
+     h2{
+        margin: 10px 0px;
+        padding-left: 10px;
+     }
+     button {
+        background-color: blue;
+        border: none;
+        padding: 10px 20px;
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+     }
+     button:hover {
+        background-color:rgb(3, 3, 122);
+     }
+     .product-container {
+        margin: 5px;
+     }
+     #feedback {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background-color: white;
+      padding: 10px;
+      border-radius: 5px;
+      display: none;
+      color: white;
+
+     }
+     #cartTotal {
+      text-align: right;
+      padding-right: 10px;
+     }
+
+     </style>
+</head>
+<body>
+    <div class="bg-container">
+   <h1>Online Shopping App</h1>
+   <p id="feedback"></p>
+   <h2>Available Products:</h2>
+ <div  class="product-container" id="productContainer">
+  <!-- <div class="product-row">
+    <p>Laptop-Rs 10000</p>
+    <button>Add to cart</button>
+   </div>-->
+</div>
+     <h2>My Cart:</h2>
+  <div id="cartContainer">
+     <!--<div class="product-row">
+    <p>Laptop-Rs 10000</p>
+    <button>Remove</button>
+      </div>-->
+  </div>
+  <h2 id="cartTotal">Total Price</h2>
+  <h2>Actions:</h2>
+<div id="actions">
+  <button onclick="sortCart()">Sort by Price</button>
+  <button onclick="clearCart()">Clear Cart</button>
+</div>
+   </div>
+   <script src="script.js"></script> 
+</body>
+</html>
